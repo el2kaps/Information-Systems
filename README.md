@@ -1,5 +1,5 @@
-## Information-Systems
-This project is part of the course "Analysis and Design of Information Systems"
+### Information-Systems
+This project is part of the course "Analysis and Design of Information Systems" <br>
 School of ECE, National Technical University of Athens 2021-2022
 
 ## A study of the Trino (Presto) polystore for executing SQL analytic queries
