@@ -16,6 +16,7 @@ School of ECE, National Technical University of Athens 2021-2022
 The purpose of this project is to connect the distributed SQL query engine Trino with the databases MongoDB, Apache HBase, Apache Cassandra and study the properties "Query optimization", "Scalability" and "Performance" of the system. 
 
 The **architecture** of the implemented system: <br>
+
 file:///home/el2kaps/Downloads/Trino.drawio%20(1).png![image](https://user-images.githubusercontent.com/63153771/160221904-ce759083-f60a-4ec8-9672-a8522e6356ff.png)
 
 
