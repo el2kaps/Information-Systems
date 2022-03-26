@@ -1,8 +1,8 @@
 ### Information-Systems
 This project is part of the course "Analysis and Design of Information Systems" <br>
 School of ECE, National Technical University of Athens 2021-2022 <br>
-Team:
-[Eleftherios Lymperopoulos](https://github.com/LefterisLymp)
+Team: <br>
+[Eleftherios Lymperopoulos](https://github.com/LefterisLymp) <br>
 [Eleni-Elpida Kapsali](https://github.com/el2kaps)
 
 ## A study of the Trino (Presto) polystore for executing SQL analytic queries
