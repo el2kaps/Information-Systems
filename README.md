@@ -17,7 +17,7 @@ The purpose of this project is to connect the distributed SQL query engine Trino
 
 The **architecture** of the implemented system: <br>
 
-<img src="https://user-images.githubusercontent.com/63153771/160221904-ce759083-f60a-4ec8-9672-a8522e6356ff.png" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/63153771/160221904-ce759083-f60a-4ec8-9672-a8522e6356ff.png" width="600" height="400">
 
 
 
