@@ -54,7 +54,7 @@ The **architecture** of the implemented system: <br>
 Now you can query the databases by writing SQL query to Trino CLI;
 
 ### Example
-- Checks that all workers are connected 
+* Checks that all workers are connected 
 <img src="https://user-images.githubusercontent.com/63153771/160288908-3c6aebe1-0d84-4e8e-871e-5d40fe66fb22.png" width="600" height="200" align="center">
 - Check that we have access to all dbs
 
@@ -62,7 +62,7 @@ Now you can query the databases by writing SQL query to Trino CLI;
 
 ![image](https://user-images.githubusercontent.com/63153771/160290487-30ec31a1-d22b-4379-81d4-1e481d180f14.png)
 
-- To work on a specific schema ex. mongodb.tpcds 
+* To work on a specific schema ex. mongodb.tpcds 
   ```use mongodb.tpcds```
   Output: ```USE```
   Now store_returns refers to the store_returns table stored in MongoDB.
