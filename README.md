@@ -24,6 +24,12 @@ The **architecture** of the implemented system: <br>
 <img src="https://user-images.githubusercontent.com/63153771/160221904-ce759083-f60a-4ec8-9672-a8522e6356ff.png" width="600" height="400" align="center">
 
 ### Set up the system
-
+**Step 1:** <br>
+* Install MongoDB on Machine 1
+* Install Apache Cassandra on Machine 2
+* Install Apache HBase on Machine 3
+**Step 2:** <br>
+Copy folders to each VM
+**Step 3:** <br>
 
 
