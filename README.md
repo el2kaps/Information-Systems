@@ -28,7 +28,9 @@ The **architecture** of the implemented system: <br>
 ✔️MongoDB on Machine 1 <br>
   Start MongoDB:  ```sudo systemctl start mongod.service```<br>
   Stop MongoDB: ```sudo systemctl start mongod.service```
+<br>
 ✔️Apache Cassandra on Machine 2
+<br>
 ✔️Apache HBase on Machine 3
 
 **Step 2:** Set up the databases <br>
