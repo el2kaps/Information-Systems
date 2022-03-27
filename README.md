@@ -24,12 +24,14 @@ The **architecture** of the implemented system: <br>
 <img src="https://user-images.githubusercontent.com/63153771/160221904-ce759083-f60a-4ec8-9672-a8522e6356ff.png" width="600" height="400" align="center">
 
 ### Set up the system
-**Step 1:** Set up the databases<br>
-* Install MongoDB on Machine 1
-* Install Apache Cassandra on Machine 2
-* Install Apache HBase on Machine 3
+**Step 1:** Install the databases using the official guides<br>
+* MongoDB on Machine 1
+* Apache Cassandra on Machine 2
+* Apache HBase on Machine 3
 
-**Step 2:** Set up Trino <br>
+**Step 2:** Set up the databases <br>
+
+**Step 3:** Set up Trino <br>
 * Copy folders to the respective Machine.
 * Start Trino servers (one for each machine)
   ```
@@ -41,7 +43,7 @@ The **architecture** of the implemented system: <br>
   cd Trino/trino/server-373
   bin/launcher stop
   ```
-**Step 3:** Run Trino CLI <br>
+**Step 4:** Run Trino CLI <br>
 * At the machine where the coordinator Trino node runs 
   ```
   cd Trino
