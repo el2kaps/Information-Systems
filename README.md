@@ -54,10 +54,21 @@ Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep cassandra```to check that
 
 ✔️**HBase**<br>
 HBase's set up is a little bit more tricky because Trino doesn't provides an HBase connenctor but a Phoenix connector.
+As Trino documentation states to query HBase data through Phoenix, you need:
+* Network access from the Trino coordinator and workers to the ZooKeeper servers. The default port is 2181.
+* A compatible version of Phoenix. We use version.
 
 
 **Step 3:** Set up Trino <br>
-* Copy directory to the respective Machine.
+* Copy repositories directories to the respective Machine.
+* Copy \textit{azul-zulu} directory to each macine. <br>
+Azul Zulu is an open source implementation of the Java Standard Edition ("SE") specification. It is a binary build of the OpenJDK open source project. Zulu provides a Java Runtime Environment needed for Java applications to run. <br>
+We used version zulu11.54.25-ca-jdk11.0.14.1-linux_x64 (Java 11). <br>
+Add Azul Zulu  to your PATH environment variable, so that you can execute java from any directory without specifying the full path.
+```
+export PATH=/home/user/azul-zulu/zulu11.54.25-ca-jdk11.0.14.1-linux_x64/bin:$PATH
+```
+
 * Start Trino servers (one for each machine)
   ```
   cd Trino/trino/server-373
