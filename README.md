@@ -32,18 +32,27 @@ The **architecture** of the implemented system: <br>
 * Apache HBase on Machine 3
 
 **Step 2:** Set up the databases <br>
-Now we must set up the databases so as to LISTEN to the private network's addresses 192.168.0.1, 192.168.0.2, 192.168.0.3.
-* MongoDB
+Now we must set up the databases so as to LISTEN to the private network's addresses 192.168.0.1, 192.168.0.2, 192.168.0.3 rather than localhost (127.0.0.1).
+* MongoDB <br>
 Change network interfaces in ```mongod.conf``` to:
 ```
 # network interfaces
 net:
   port: 27017
   bindIp: 192.168.0.1
+  and restart the database. <br>
   ```
+Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep mongo``` to check that the database listens to the desired IP. <br>
 ```mongod.conf``` in our system is located in \etc\ directory.
-* Cassandra
+* Cassandra <br>
+Replace ```cassandra.yaml``` with the ```cassandra.yaml``` in the Cassandra directory. <br>
+Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep cassandra```to check that the database listens to the desired IP (192.168.02). <br>
+```cassandra.yaml``` in our system is located in \etc\ directory.
+
 * HBase
+HBase's set up is a little bit more tricky because Trino doesn't provides an HBase connenctor but a Phoenix connector.
+
+
 **Step 3:** Set up Trino <br>
 * Copy directory to the respective Machine.
 * Start Trino servers (one for each machine)
