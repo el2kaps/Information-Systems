@@ -53,7 +53,7 @@ The **architecture** of the implemented system: <br>
   ```
 Now you can query the databases by writing SQL query to Trino CLI;
 
-### Example
+## Examples
 * Checks that all workers are connected 
 <img src="https://user-images.githubusercontent.com/63153771/160288908-3c6aebe1-0d84-4e8e-871e-5d40fe66fb22.png" width="600" height="200" align="center">
 
@@ -71,6 +71,8 @@ Now you can query the databases by writing SQL query to Trino CLI;
   
   * Use ```DESCRIBE <table name>``` to view sql columns of the table.
   ![image](https://user-images.githubusercontent.com/63153771/160290912-ee1b0cbe-ca4f-459f-80f0-25f29db94dd1.png)
-
+  
+  * Use ```SHOW STATS``` for approximated statistics for the named table.
+  
     
 
