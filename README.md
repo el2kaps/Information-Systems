@@ -25,11 +25,11 @@ The **architecture** of the implemented system: <br>
 
 ### Set up the system
 **Step 1:** Install the databases using the official guides<br>
-* MongoDB on Machine 1 <br>
+- [x] MongoDB on Machine 1 <br>
   Start MongoDB:  ```sudo systemctl start mongod.service```<br>
   Stop MongoDB: ```sudo systemctl start mongod.service```
-* Apache Cassandra on Machine 2
-* Apache HBase on Machine 3
+- [x] Apache Cassandra on Machine 2
+- [x] Apache HBase on Machine 3
 
 **Step 2:** Set up the databases <br>
 Now we must set up the databases so as to LISTEN to the private network's addresses 192.168.0.1, 192.168.0.2, 192.168.0.3 rather than localhost (127.0.0.1).
@@ -71,7 +71,7 @@ HBase's set up is a little bit more tricky because Trino doesn't provides an HBa
   cd Trino
   ./trino
   ```
-Now you can query the databases by writing SQL query to Trino CLI;
+Now you can query the databases by writing SQL queries to Trino CLI.
 
 ## Examples
 * Checks that all workers are connected 
