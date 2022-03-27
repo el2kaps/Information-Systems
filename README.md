@@ -25,7 +25,7 @@ The **architecture** of the implemented system: <br>
 
 ### Set up the system
 **Step 1:** Install the databases using the official guides<br>
-- [x] MongoDB on Machine 1 <br>
+| Yep MongoDB on Machine 1 <br>
   Start MongoDB:  ```sudo systemctl start mongod.service```<br>
   Stop MongoDB: ```sudo systemctl start mongod.service```
 - [x] Apache Cassandra on Machine 2
