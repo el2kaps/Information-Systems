@@ -26,6 +26,8 @@ The **architecture** of the implemented system: <br>
 ### Set up the system
 **Step 1:** Install the databases using the official guides<br>
 * MongoDB on Machine 1
+  Start MongoDB:  ```sudo systemctl start mongod.service```
+  Stop MongoDB: ```sudo systemctl start mongod.service```
 * Apache Cassandra on Machine 2
 * Apache HBase on Machine 3
 
@@ -58,4 +60,9 @@ Now you can query the databases by writing SQL query to Trino CLI;
 <img src="https://user-images.githubusercontent.com/63153771/160289205-e44e1d18-2c76-4a3b-97c3-da52e7bff1ab.png" width="400" height="300" align="center">
 <img src="https://user-images.githubusercontent.com/63153771/160289223-b2e50904-ad36-430c-964a-8ffe023cb7aa.png" width="400" height="300" align="center">
 
-- To work on a specific schema ex. 
+- To work on a specific schema ex. mongodb.tpcds 
+  ```use mongodb.tpcds```
+  Output: ```USE```
+  Now store_returns refers to the store_returns table stored in MongoDB.
+  ![image](https://user-images.githubusercontent.com/63153771/160290380-59fe3b1b-3c29-47ec-93f4-feabca38ef82.png)
+
