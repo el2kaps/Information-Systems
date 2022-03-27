@@ -52,4 +52,4 @@ The **architecture** of the implemented system: <br>
 Now you can query the databases by writing SQL query to Trino CLI;
 
 ### Example
-
+- Checks that all workers are connected 
