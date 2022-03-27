@@ -56,19 +56,38 @@ Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep cassandra```to check that
 HBase's set up is a little bit more tricky because Trino doesn't provides an HBase connenctor but a Phoenix connector.
 As Trino documentation states to query HBase data through Phoenix, you need:
 * Network access from the Trino coordinator and workers to the ZooKeeper servers. The default port is 2181.
-* A compatible version of Phoenix. We use version.
-
-
-**Step 3:** Set up Trino <br>
-* Copy repositories directories to the respective Machine.
-* Copy \textit{azul-zulu} directory to each macine. <br>
+* A compatible version of Phoenix. We use version 5.
+* Copy ```azul-zulu`` directory to each macine. <br>
 Azul Zulu is an open source implementation of the Java Standard Edition ("SE") specification. It is a binary build of the OpenJDK open source project. Zulu provides a Java Runtime Environment needed for Java applications to run. <br>
 We used version zulu11.54.25-ca-jdk11.0.14.1-linux_x64 (Java 11). <br>
 Add Azul Zulu  to your PATH environment variable, so that you can execute java from any directory without specifying the full path.
 ```
 export PATH=/home/user/azul-zulu/zulu11.54.25-ca-jdk11.0.14.1-linux_x64/bin:$PATH
 ```
+* Install Phoenix 5 using the official guide. In our system we use phoenix-hbase-2.4-5.1.2-bin.<br>
+* Replace ```hbase-site.xml``` in both ```phoenix-hbase-2.4-5.1.2-bin/bin``` and  ```hbase-2.4.11/conf``` with the ```hbase-site.xml``` in Hbase-conf directory. <br>
+```
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hbase.tmp.dir</name>
+    <value>./tmp</value>
+  </property>
+  <property>
+    <name>hbase.unsafe.stream.capability.enforce</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>phoenix.schema.isNamespaceMappingEnabled</name>
+    <value>true</value>
+  </property>
+</configuration>
+```
 
+**Step 3:** Set up Trino <br>
+* Copy repository's ```Trino``` directories to the respective Machine.
 * Start Trino servers (one for each machine)
   ```
   cd Trino/trino/server-373
@@ -79,7 +98,7 @@ export PATH=/home/user/azul-zulu/zulu11.54.25-ca-jdk11.0.14.1-linux_x64/bin:$PAT
   cd Trino/trino/server-373
   bin/launcher stop
   ```
-**Step 4:** Run Trino CLI <br>
+**Step 5:** Run Trino CLI <br>
 * At the machine where the coordinator Trino node runs 
   ```
   cd Trino
