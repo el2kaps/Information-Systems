@@ -34,9 +34,9 @@ The **architecture** of the implemented system: <br>
 ✔️Apache HBase on Machine 3
 
 **Step 2:** Set up the databases <br>
-Now we must set up the databases so as to LISTEN to the private network's addresses 192.168.0.1, 192.168.0.2, 192.168.0.3 rather than localhost (127.0.0.1).
+Now we must set up the databases so as to LISTEN to the private network's addresses 192.168.0.1, 192.168.0.2, 192.168.0.3 rather than localhost (127.0.0.1).<br>
 ✔️MongoDB <br>
-Change network interfaces in ```mongod.conf``` to:
+Change network interfaces in ```mongod.conf``` to: <br>
 ```
 # network interfaces
 net:
@@ -46,6 +46,7 @@ net:
   ```
 Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep mongo``` to check that the database listens to the desired IP. <br>
 ```mongod.conf``` in our system is located in \etc\ directory.
+<br>
 ✔️Cassandra <br>
 Replace ```cassandra.yaml``` with the ```cassandra.yaml``` in the Cassandra directory. <br>
 Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep cassandra```to check that the database listens to the desired IP (192.168.02). <br>
@@ -91,10 +92,10 @@ HBase's set up is a little bit more tricky because Trino doesn't provides an HBa
   Now store_returns refers to the store_returns table stored in MongoDB.
   ![image](https://user-images.githubusercontent.com/63153771/160290380-59fe3b1b-3c29-47ec-93f4-feabca38ef82.png)
   
-  * Use ```DESCRIBE <table name>``` to view sql columns of the table.
+ * Use ```DESCRIBE <table name>``` to view sql columns of the table.
   ![image](https://user-images.githubusercontent.com/63153771/160290912-ee1b0cbe-ca4f-459f-80f0-25f29db94dd1.png)
   
-  * Use ```SHOW STATS``` for approximated statistics for the named table.
+* Use ```SHOW STATS``` for approximated statistics for the named table.
   
     
 
