@@ -68,4 +68,9 @@ Now you can query the databases by writing SQL query to Trino CLI;
   Output: ```USE```
   Now store_returns refers to the store_returns table stored in MongoDB.
   ![image](https://user-images.githubusercontent.com/63153771/160290380-59fe3b1b-3c29-47ec-93f4-feabca38ef82.png)
+  
+  * Use ```DESCRIBE <table name>``` to view sql columns of the table.
+  ![image](https://user-images.githubusercontent.com/63153771/160290912-ee1b0cbe-ca4f-459f-80f0-25f29db94dd1.png)
+
+    
 
