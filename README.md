@@ -57,6 +57,7 @@ Now you can query the databases by writing SQL query to Trino CLI;
 - Checks that all workers are connected 
 <img src="https://user-images.githubusercontent.com/63153771/160288908-3c6aebe1-0d84-4e8e-871e-5d40fe66fb22.png" width="600" height="200" align="center">
 - Check that we have access to all dbs
+
 ![image](https://user-images.githubusercontent.com/63153771/160290466-fc335cf7-ba7c-456c-8c26-39ac165f34f5.png)
 
 ![image](https://user-images.githubusercontent.com/63153771/160290487-30ec31a1-d22b-4379-81d4-1e481d180f14.png)
