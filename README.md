@@ -45,12 +45,12 @@ net:
   and restart the database. <br>
   ```
 Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep mongo``` to check that the database listens to the desired IP. <br>
-```mongod.conf``` in our system is located in \etc\ directory.
+```mongod.conf``` in our system is located in /etc/ directory.
 <br>
 ✔️**Cassandra** <br>
 Replace ```cassandra.yaml``` with the ```cassandra.yaml``` in the Cassandra directory. <br>
 Use the command ```sudo lsof -iTCP -sTCP:LISTEN | grep cassandra```to check that the database listens to the desired IP (192.168.02). <br>
-```cassandra.yaml``` in our system is located in \etc\ directory.
+```cassandra.yaml``` in our system is located in /etc/cassandra directory.
 
 ✔️**HBase**<br>
 HBase's set up is a little bit more tricky because Trino doesn't provides an HBase connenctor but a Phoenix connector.
