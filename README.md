@@ -23,6 +23,9 @@ The **architecture** of the implemented system: <br>
 
 <img src="https://user-images.githubusercontent.com/63153771/160221904-ce759083-f60a-4ec8-9672-a8522e6356ff.png" width="600" height="400" align="center">
 
+✔️```utility-scripts``` directory contains scripts we used to set up the VMs we used.<br>
+For example to create a passwordless connection between the VMs and NAT since only one VM has a public IPv4.
+
 ### Set up the system
 **Step 1:** Install the databases using the official guides<br>
 ✔️**MongoDB** on Machine 1 <br>
