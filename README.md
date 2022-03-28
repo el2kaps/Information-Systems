@@ -57,7 +57,7 @@ HBase's set up is a little bit more tricky because Trino doesn't provides an HBa
 As Trino documentation states to query HBase data through Phoenix, you need:
 * Network access from the Trino coordinator and workers to the ZooKeeper servers. The default port is 2181.
 * A compatible version of Phoenix. We use version 5.
-* Copy ```azul-zulu`` directory to each macine. <br>
+* Copy ```azul-zulu``` directory to each macine. <br>
 Azul Zulu is an open source implementation of the Java Standard Edition ("SE") specification. It is a binary build of the OpenJDK open source project. Zulu provides a Java Runtime Environment needed for Java applications to run. <br>
 We used version zulu11.54.25-ca-jdk11.0.14.1-linux_x64 (Java 11). <br>
 Add Azul Zulu  to your PATH environment variable, so that you can execute java from any directory without specifying the full path.
